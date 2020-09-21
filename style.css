@@ -1,3 +1,8 @@
+:root {
+    --color-primary: #8257e6;
+    --color-primary-hover: #9466ff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,33 +10,80 @@
 }
 
 body {
-    font-family: roboto;
-    background-image: url(https://walrus-assets.s3.amazonaws.com/img/Space-735x490-1.jpg);
+    font-family: 'roboto';
+    background-image: url(space1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #fff;
 }
 
+
 header {
-    text-align: center;
     padding: 30px;
     line-height: 30px;
     background: rgba(0, 0, 0, 0.5);
 }
 
-header a {
-    color: #E6E6FA	;
+.links {
+    text-align: center;
+}
+
+.links a {
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 24px;
 }
 
-header a:not(:first-child) {
+.links a:not(:first-child) {
     margin-left: 30px;
 }
 
-header a:hover {
-    color: #7B68EE;
+.links a:hover {
+    color: var(--color-primary-hover);
     transition: color 300ms;
     text-decoration: underline;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px;
+    color: #fff;
+    font-size: 20px;
+}
+
+#wrapper img {
+    border-radius: 50%;
+    border:  2px solid var(--color-primary-hover);
+    margin-bottom: 32px;
+}
+
+#wrapper h1 {
+    color: var(--color-primary); 
+    line-height: 50px;
+    font-weight: 700; 
+}
+
+#wrapper p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    opacity: 0.9;
+}
+
+#list {
+    list-style: inside;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#list li {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#links-footer a {
+    border-bottom: 2px solid var(--color-primary-hover);
 }
