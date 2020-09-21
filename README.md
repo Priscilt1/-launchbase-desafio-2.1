@@ -2,6 +2,6 @@
 
 Criando um arquivo html que contenha um favicon e um header com 3 links: Comunidade, Email e Telefone.
 
-<img src="Captura de Tela 2020-09-21 às 15.57.14" style="width: 100%">
+<img src="https://drive.google.com/file/d/1W9fJKnP4RgCaCNzFUv1fqDj0v5fK-1E0/view?usp=sharing" style="width: 100%">
 
 
