@@ -1,6 +1,7 @@
 :root {
     --color-primary: #8257e6;
     --color-primary-hover: #9466ff;
+    --color-rocketseat: #7159c1;
 }
 
 * {
@@ -13,7 +14,8 @@ body {
     font-family: 'roboto';
     background-image: url(space1.jpg);
     height: 100vh;
-    background-repeat: no-repeat;
+    /* ver a questao da imagem do fundo */
+    /* background-repeat: no-repeat; */
     background-size: cover;
     color: #fff;
 }
@@ -86,4 +88,109 @@ header {
 
 #links-footer a {
     border-bottom: 2px solid var(--color-primary-hover);
+}
+
+/*=== CARDS ===*/
+.cards {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--color-rocketseat);
+}
+
+.card__image-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 20px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.card__content p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card__info p {
+    display: flex;
+    align-items: center;
+}
+
+.card__info i {
+    margin-right: 2px;
+}
+
+.card__time {
+  text-align: right;
+}
+
+/*=== MODAL ===*/
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* para trazer o modal pra cima  */
+    top: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    /* tem que calcular o margin de acordo com o tamanho do modal, exemplo 90 de altura e largura mais 5 de margin totaliza 100 para ficar centralizado */
+    margin: 5vh auto;
+    /* o position relativo permite que esconda o modal */
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal {
+    color: black;
+    position: absolute;
+    right: 40px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.modal .maximize-modal i {
+    font-size: 20px;
+}
+
+.modal.maximized {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/*=== MODAL.ACTIVE ===*/
+/* lemnrando que o active tem que ser escrita colada, sem espaço */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 90vh;
 }
