@@ -2,6 +2,6 @@
 
 Criando um arquivo html que contenha um favicon e um header com 3 links: Comunidade, Email e Telefone.
 
-<img src="https://media-exp1.licdn.com/dms/image/C4E22AQEg89gQkL6xbQ/feedshare-shrink_20-alternative/0?e=1603324800&v=beta&t=RiJTOz2sOxV7YfHoZ_ZZITpc2rQs4cv46GzJ7gySC7Q" style="width: 100%">
+<img src="https://scontent-gig2-1.cdninstagram.com/v/t51.2885-15/sh0.08/e35/s640x640/119847842_785815565516009_3984495583028921885_n.jpg?_nc_ht=scontent-gig2-1.cdninstagram.com&_nc_cat=105&_nc_ohc=qhra5WFJDkMAX9fYP9b&oh=c87b904ca7e45ae1623c0242c6f2c3f6&oe=5F91F63C" style="width: 100%">
 
 
